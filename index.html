@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Luxo em Dubai | Marina Apartment</title>
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark: #1a1a1a;
+            --light: #f9f9f9;
+            --gray: #666;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--dark);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--gold);
+        }
+        header h1 {
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            color: var(--gold);
+            font-size: 1rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        @media (max-width: 768px) {
+            .container { grid-template-columns: 1fr; }
+        }
+        .main-content {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .gallery-placeholder {
+            background: linear-gradient(135deg, #e0e0e0, #c0c0c0);
+            height: 350px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark);
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .price {
+            font-size: 1.8rem;
+            color: var(--gold);
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+            background: var(--light);
+            padding: 15px;
+            border-radius: 6px;
+        }
+        .detail-item h4 { color: var(--gray); font-size: 0.85rem; }
+        .detail-item p { font-weight: bold; }
+        .sidebar {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+        .sidebar h3 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn-submit {
+            width: 100%;
+            background-color: var(--dark);
+            color: white;
+            border: 2px solid var(--gold);
+            padding: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 4px;
+        }
+        .btn-submit:hover {
+            background-color: var(--gold);
+            color: var(--dark);
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--dark);
+            color: white;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dubai Marina Luxury Apartment</h1>
+        <p>Viva a experiência exclusiva no coração de Dubai</p>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <div class="gallery-placeholder">
+                [ Foto Panorâmica de Dubai Marina ]
+            </div>
+
+            <h2>Apartamento Premium com Vista para o Mar</h2>
+            <p style="color: var(--gray); margin-bottom: 15px;">Dubai Marina, Dubai, Emirados Árabes Unidos</p>
+            
+            <p class="price">AED 15.000 / mês</p>
+
+            <div class="details-grid">
+                <div class="detail-item">
+                    <h4>Quartos</h4>
+                    <p>2 Suítes</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Banheiros</h4>
+                    <p>3 Banheiros</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Área</h4>
+                    <p>120 m²</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Vagas</h4>
+                    <p>1 Coberta</p>
+                </div>
+            </div>
+
+            <h3>Descrição do Imóvel</h3>
+            <p style="margin-bottom: 20px;">
+                Espetacular apartamento totalmente mobiliado localizado em um dos condomínios mais prestigiados de Dubai Marina. O imóvel conta com acabamento em mármore, cozinha equipada com eletrodomésticos de última geração, varanda espaçosa com vista definitiva para a marina e acesso direto à praia.
+            </p>
+
+            <h3>Comodidades do Condomínio</h3>
+            <ul style="margin-left: 20px; margin-bottom: 20px;">
+                <li>Piscina de borda infinita climatizada</li>
+                <li>Academia de alta tecnologia 24h</li>
+                <li>Serviço de concierge e segurança dedicada</li>
+                <li>Spa e sauna privativos</li>
+            </ul>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Agendar Visita</h3>
+            <form action="#" method="POST" onsubmit="alert('Obrigado! Entraremos em contato em breve.'); return false;">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" required placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required placeholder="seu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone (WhatsApp)</label>
+                    <input type="tel" id="phone" required placeholder="+55 ...">
+                </div>
+                <div class="form-group">
+                    <label for="date">Data Pretendida</label>
+                    <input type="date" id="date" required>
+                </div>
+                <button type="submit" class="btn-submit">Contatar Agente</button>
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Dubai Luxury Rentals. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
